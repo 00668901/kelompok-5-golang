@@ -13,13 +13,13 @@
             "use": "@vercel/go"
         }
     ],
-    "routes": [{
-            "src": "/api/(.*)",
-            "dest": "/api/index.go"
+    "rewrites": [{
+            "source": "/api/(.*)",
+            "destination": "/api/index.go"
         },
         {
-            "src": "/(.*)",
-            "dest": "frontend/$1"
+            "source": "/(.*)",
+            "destination": "/frontend/$1"
         }
     ],
     "headers": [{
