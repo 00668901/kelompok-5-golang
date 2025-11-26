@@ -12,7 +12,8 @@
             "src": "api/index.go",
             "use": "@vercel/go",
             "config": {
-                "goVersion": "1.20"
+                "goVersion": "1.20",
+                "goModEnable": false
             }
         }
     ],
